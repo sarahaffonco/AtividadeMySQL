@@ -3,7 +3,7 @@ CREATE DATABASE db_rh;
 USE db_rh;
 
 CREATE TABLE tb_colaboradores (
- id BIGINT AUTO_INCREMENT,
+	id BIGINT AUTO_INCREMENT,
 	nomecompleto VARCHAR(255) NOT NULL,
 	cpf VARCHAR(15) NOT NULL,
     cargo VARCHAR(255),
@@ -35,8 +35,12 @@ UPDATE tb_colaboradores SET salario = 700 WHERE id = 1;
 
 UPDATE tb_colaboradores SET departamento = 'Analista' WHERE id = 1;
 
+SELECT * FROM tb_colaboradores WHERE id = 1;
+
 UPDATE tb_colaboradores
 SET salario = 7500.00,
     cargo = 'Desenvolvedor Pleno',
     departamento = 'Tecnologia da Informação'
 WHERE id = 2;
+
+SELECT * FROM tb_colaboradores WHERE id = 2;
